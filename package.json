@@ -2,10 +2,13 @@
   "name": "workflow",
   "version": "0.0.1",
   "description": "my first project",
-  
   "repository": {
     "type": "git",
     "url": "?.git"
   },
-  "author": "Michael Polak"
+  "author": "Michael Polak",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7"
+  }
 }
