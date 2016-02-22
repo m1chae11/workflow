@@ -4,7 +4,7 @@
   "description": "my first project",
   "repository": {
     "type": "git",
-    "url": "?.git"
+    "url": "https://github.com/m1chae11/workflow.git"
   },
   "author": "Michael Polak",
   "devDependencies": {
