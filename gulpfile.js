@@ -1,3 +1,5 @@
+// gulp API https://github.com/gulpjs/gulp/blob/master/docs/API.md
+
 var gulp = require('gulp'),
 	gutil = require('gulp-util'),
 	coffee = require('gulp-coffee'),
@@ -41,3 +43,12 @@ gulp.task('compass',function(){
 	.pipe(gulp.dest('builds/developments/css'))
 
 })
+
+gulp.task('watch',function(){
+	gulp.watch(coffeeSources,['coffee'])
+	gulp.watch(jsSources,['js'])
+	gulp.watch('components/sass/*.scss',['compass'])
+})
+
+
+gulp.task('default',['js','compass','coffee'])
